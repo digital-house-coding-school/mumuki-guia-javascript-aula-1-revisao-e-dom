@@ -1,0 +1,8 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: head
+  inspection: DeclaresTag:script
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: script
+  inspection: DeclaresAttribute:src="script.js"
