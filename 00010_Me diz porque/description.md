@@ -4,7 +4,7 @@ Mais uma vez, vamos pedir-lhe para utilizar a mensagem "Quer o nosso boletim inf
 
 A novidade é que **dependendo** da resposta do usuário, mostraremos uma mensagem subsequente.
 
-Se o usuário respondeu sim à newsletter, perguntaremos **"Quais são seus interesses?"**.
+Se o usuário respondeu sim à newsletter, perguntaremos **"Você quer nosso boletim informativo?"**.
 
 Caso você responda não, perguntaremos **"Por que não?"**
 
