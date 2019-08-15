@@ -6,7 +6,7 @@ describe("Exercício 7", function() {
       modelo: "Sandero"
     };
 
-    var partes = partesAuto(carro);
+    var partes = pecasDeCarro(carro);
 
     assert(
       Array.isArray(partes),
