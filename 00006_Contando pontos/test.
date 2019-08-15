@@ -1,8 +1,8 @@
 describe("Exercício 6", function() {
   it("Contando pontos", function() {
     assert(
-      ginobili.puntos === 10,
-      `Emanuel deveria ter 10 pontos, mas tem ${ginobili.puntos} pontos`
+      ginobili.pontos === 10,
+      `Emanuel deveria ter 10 pontos, mas tem ${ginobili.pontos} pontos`
     );
   });
 });
