@@ -67,16 +67,16 @@ describe("Exercício 4", function() {
       `O método cumprimentar está retornando o texto '${cumprimento}' em vez de  'Olá Thomaz eu sou o Emanuel'`
     );
 
-    var cumprimento = ginobili.cumprimentar("Martin");
+    const cumprimento1 = ginobili.cumprimentar("Martin");
 
     assert(
-      cumprimento !== "undefined",
+      cumprimento1 !== "undefined",
       "A função cumprimentar não tem nenhum retorno"
     );
 
     assert(
-      cumprimento === "Olá Martin eu sou o Emanuel",
-      `O método cumprimentar está retornando o texto '${cumprimento}' em vez de  'Olá Martin eu sou o Emanuel'`
+      cumprimento1 === "Olá Martin eu sou o Emanuel",
+      `O método cumprimentar está retornando o texto '${cumprimento1}' em vez de  'Olá Martin eu sou o Emanuel'`
     );
   });
 });
