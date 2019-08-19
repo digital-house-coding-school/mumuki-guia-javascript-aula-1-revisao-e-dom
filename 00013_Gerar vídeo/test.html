@@ -9,12 +9,12 @@
   true.should.eql(tevePrompt, "<b><u>Utilizou a função prompt?</u></b>");
 
   var definiuSrc =
-    document.querySelector("#video").getAttribute("src") !== null;
+    document.querySelector("iframe").getAttribute("src") !== null;
 
-  definiuSrc.should.eql(true, "Não definiu o atributo src do #video?");
+  definiuSrc.should.eql(true, "Não definiu o atributo src do iframe?");
 
   document
-    .querySelector("#video")
+    .querySelector("iframe")
     .getAttribute("src")
     .should.be.eql("https://www.youtube.com/embed/" + _prompt_response_);
 });
@@ -29,12 +29,12 @@ it("Test Video 2", function() {
   true.should.eql(tevePrompt, "<b><u>Utilizou a função prompt?</u></b>");
 
   var definiuSrc =
-    document.querySelector("#video").getAttribute("src") !== null;
+    document.querySelector("iframe").getAttribute("src") !== null;
 
-  definiuSrc.should.eql(true, "Não definiu o atributo src do #video?");
+  definiuSrc.should.eql(true, "Não definiu o atributo src do iframe?");
 
   document
-    .querySelector("#video")
+    .querySelector("iframe")
     .getAttribute("src")
     .should.be.eql("https://www.youtube.com/embed/" + _prompt_response_);
 });
