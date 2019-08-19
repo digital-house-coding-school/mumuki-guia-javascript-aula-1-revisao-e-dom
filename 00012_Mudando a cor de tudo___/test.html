@@ -1,5 +1,5 @@
 /*<output#*//*#output>*/
-/*<tests#*/it("Trocou para azul", function() {
+/*<tests#*/it("Trocar para azul", function() {
   _prompt_response_ = "blue";
 
   _dispatch_("load", document);
@@ -17,18 +17,20 @@
   }
 });
 
-it("Troucou para vermelho", function() {
+it("Trocar para vermelho", function() {
   _prompt_response_ = "red";
 
   _dispatch_("load", document);
 
-  var tevePrompt = _last_prompt_message_ !== null;
+  const tevePrompt = _last_prompt_message_ !== null;
 
   true.should.eql(tevePrompt, "<b><u>Utilizou a função prompt?</u></b>");
 
   _last_prompt_message_.should.eql("Escolha uma cor");
 
   var lis = document.querySelectorAll("li");
+
+  console.log(lis);
 
   for (var i = 0; i < lis.length; i++) {
     lis[i].style.color.should.be.eql("red");
