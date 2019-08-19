@@ -12,9 +12,9 @@
 
   const lis = document.querySelectorAll("li");
 
-  lis.forEach(elem => {
-    elem.style.color.should.be.eql("blue");
-  });
+  for (var i = 0; i < lis.length; i++) {
+    lis[i].style.color.should.be.eql("blue");
+  }
 });
 
 it("Troucou para vermelho", function() {
@@ -30,9 +30,9 @@ it("Troucou para vermelho", function() {
 
   var lis = document.querySelectorAll("li");
 
-  lis.forEach(elem => {
-    elem.style.color.should.be.eql("red");
-  });
+  for (var i = 0; i < lis.length; i++) {
+    lis[i].style.color.should.be.eql("red");
+  }
 });
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
