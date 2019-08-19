@@ -17,8 +17,8 @@
   }
 });
 
-it("Trocar para vermelho", function() {
-  _prompt_response_ = "red";
+it("Trocar para verde", function() {
+  _prompt_response_ = "green";
 
   _dispatch_("load", document);
 
@@ -28,13 +28,11 @@ it("Trocar para vermelho", function() {
 
   _last_prompt_message_.should.eql("Escolha uma cor");
 
-  var lis = document.querySelector("li");
+  var lis = document.querySelectorAll("li");
 
-  lis.style.color.should.be.eql("red");
-
-  // for (var i = 0; i < lis.length; i++) {
-  //   lis[i].style.color.should.be.eql("red");
-  // }
+  for (var i = 0; i < lis.length; i++) {
+    lis[i].style.color.should.eql("green");
+  }
 });
 /*#tests>*/
 /*<options#*/output_ignore_scripts: true
