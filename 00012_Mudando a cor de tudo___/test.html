@@ -10,7 +10,7 @@
 
   _last_prompt_message_.should.eql("Escolha uma cor");
 
-  var lis = document.querySelectorAll("li");
+  var lis = document.querySelectorAll("li .lista");
 
   for (var i = 0; i < lis.length; i++) {
     lis[i].style.color.should.be.eql("blue");
@@ -28,7 +28,7 @@ it("Trocar para verde", function() {
 
   _last_prompt_message_.should.eql("Escolha uma cor");
 
-  var lis = document.querySelectorAll("li");
+  var lis = document.querySelectorAll("li .lista");
 
   for (var i = 0; i < lis.length; i++) {
     lis[i].style.color.should.eql("green");
